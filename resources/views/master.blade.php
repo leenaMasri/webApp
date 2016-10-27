@@ -20,7 +20,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
  <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--js-->
 <!-- Scripts -->
     <script>
@@ -65,17 +65,27 @@ left:200px;
 			<div class="header-top">
 				<div class="container">
 					<div class="head-top">
-					<div class="social-icons" class id="icons">
+					<div class="indicate">
+					 <div class="social-icons" class id="icons">
 									<a href="#"><i class="icon"></i></a>
 									<a href="#"><i class="icon1"></i></a>
 									<a href="#"><i class="icon2"></i></a>
 									<a href="#"><i class="icon3"></i></a>
 
-								</div>
+								</div>					
+							<!--<i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="#">General Pvt 66, Dong Da Hanoi, Vietnam.</a>-->
+						</div>
+						</div>
+					
 								<!-- Authentication Links -->
 								  @if (Auth::guest())
-								<a href="{{ url('/login') }}" data-toggle="modal" data-target="#myModal1">التسجيل</a><br/>
-								<a href="{{ url('/register') }}" data-toggle="modal" data-target="#myModal">تسجيل الدخول</a>
+                      <div class="deatils">
+							<ul>
+							<li><i class="glyphicon glyphicon-lock" aria-hidden="true"></i><a href="{{ url('/register') }}" data-toggle="modal" data-target="#myModal1">الاشتراك</a></li>
+								<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="{{ url('/login') }}" data-toggle="modal" data-target="#myModal">تسجيل الدخول</a></li>
+								
+							</ul>
+								
 								 @else
 								  <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -98,7 +108,10 @@ left:200px;
                             </ul>
                         </li>
                     @endif
-					
+
+
+
+                   
 						<div class="clearfix"></div>
 					</div>
 				
@@ -123,14 +136,16 @@ left:200px;
 
 								<ul class="nav navbar-nav menu__list" class id="aa">
 								 <a href="index.php"> <img  src="images/logo.PNG" alt=""  style="width:250px;height:100px;right:0;"></a>
-                                     <li class="menu__item"><a href="/contact" class="menu__link"><span class="menu__helper">للتواصل معنا</span></a>
-									</li>
+			                   <li class="menu__item"><a href="/home" class="menu__link"><span class="menu__helper">من نحن</span></a></li>
+									
+                               <li class="menu__item"><a href="/contact" class="menu__link"><span class="menu__helper">للتواصل معنا</span></a></li>
 									<li class="menu__item"><a href="/codes" class="menu__link"><span class="menu__helper">Codes</span></a></li>
 									<li class="menu__item"><a href="/projects" class="menu__link"><span class="menu__helper">Projects</span></a></li>
-									
-									<li class="menu__item menu__item--current"><a href="/about" class="menu__link"><span class="menu__helper">من نحن</span></a></li>
+								
+								    
 									<li class="menu__item"><a href="/services" class="menu__link"><span class="menu__helper">الخدمات</span></a></li>
-									<li class="menu__item"><a href="/home" class="menu__link"><span class="menu__helper">الصفحة الرئيسية</span></a></li>
+									<li class="menu__item menu__item--current"><a href="/about" class="menu__link"><span class="menu__helper">الرئيسية</span></a></li>
+									
 								</ul>
 							</nav>
 <!-- Collect the nav links, forms, and other content for toggling -->

@@ -12,9 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('admin.login');
+    return view('welcome');
 });
-Route::get('/admin','adminController@showadminPage');
+Route::group(['middleware'=> ['admin']],function(){
+    Route::get('admin', function () {
+    echo 'You have access!';
+    });
+});
+//Route::get('/admin','adminController@showadminPage');
 
 Route::get('/about','aboutController@showAboutPage');
 Route::get('/codes','CodeController@showcodePage');
@@ -23,6 +28,26 @@ Route::get('/projects','ProjectController@showProjectPage');
 Route::get('/services','ServicesController@showServicesPage');
 Route::get('/index','indexController@showindexPage');
 Route::get('/home','HomeController@showhomePage');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
 
 Auth::routes();
 

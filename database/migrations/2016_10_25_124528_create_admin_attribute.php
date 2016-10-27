@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddPhoneNumberToUser extends Migration
+class CreateAdminAttribute extends Migration
 {
+   
     /**
      * Run the migrations.
      *
@@ -13,10 +14,9 @@ class AddPhoneNumberToUser extends Migration
      */
     public function up()
     {
-        
-        Schema::table('users', function ($table) {
-        $table->string('phone_number');
-});
+        Schema::table('users', function($table){
+            $table->integer('admin')->default(0);
+        });
     }
 
     /**
@@ -28,4 +28,6 @@ class AddPhoneNumberToUser extends Migration
     {
         Schema::drop('users');
     }
+
+
 }

@@ -81,5 +81,86 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script>
+    $(function() {
+
+        var app = {
+            DOM: {},
+            init: function () {
+
+                // only applies to register form
+                if (window.location.pathname == '/register') {
+
+                    this.DOM.form = $('form');
+                    this.DOM.form.name  = this.DOM.form.find('input[name="name"]');
+                    this.DOM.form.email = this.DOM.form.find('input[name="email"]');
+                    this.DOM.form.pwd   = this.DOM.form.find('input[name="password"]');
+                    this.DOM.form.pwdc  = this.DOM.form.find('input[name="password_confirmation"]');
+
+                    this.DOM.form.name.group = this.DOM.form.name.closest('.form-group');
+                    this.DOM.form.email.group = this.DOM.form.email.closest('.form-group');
+                    this.DOM.form.pwd.group = this.DOM.form.pwd.closest('.form-group');
+
+                    this.DOM.form.submit( function(e) {
+                        e.preventDefault();
+
+                        var self = this; // native form object
+
+                        error = {};
+
+                        app.DOM.form.name.group.find('strong').text('');
+                        app.DOM.form.email.group.find('strong').text('');
+                        app.DOM.form.pwd.group.find('strong').text('');
+
+                        app.DOM.form.name.group.removeClass('has-error');
+                        app.DOM.form.email.group.removeClass('has-error');
+                        app.DOM.form.pwd.group.removeClass('has-error');
+
+                        var user = {};
+                        user.name = app.DOM.form.name.val();
+                        user.email = app.DOM.form.email.val();
+                        user.password = app.DOM.form.pwd.val();
+                        user.password_confirmation = app.DOM.form.pwdc.val();
+
+                        var request = $.ajax({
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                            },
+                            url: '/validate/user',
+                            type: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify(user)
+                        });
+                        request.done( function(data)
+                        {
+                            // native form submit
+                            self.submit();
+                        });
+                        request.fail( function(jqXHR)
+                        {
+                            error = jqXHR.responseJSON;
+                            if (error.name) {
+                                app.DOM.form.name.group.find('strong').text(error.name[0]);
+                                app.DOM.form.name.group.addClass('has-error');
+                            }
+                            if (error.email) {
+                                app.DOM.form.email.group.find('strong').text(error.email[0]);
+                                app.DOM.form.email.group.addClass('has-error');
+                            }
+                            if (error.password) {
+                                app.DOM.form.pwd.group.find('strong').text(error.password[0]);
+                                app.DOM.form.pwd.group.addClass('has-error');
+                            }
+
+                        });
+
+                    });
+                }
+            }
+        }
+        app.init();
+    });
+    </script>
+
 </body>
 </html>

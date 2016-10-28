@@ -19,6 +19,13 @@ Route::group(['middleware'=> ['admin']],function(){
     echo 'You have access!';
     });
 });
+
+Route::group(['middleware' => ['api']], function () {
+    Route::post('validate/user',[
+      'uses' => 'Validation\UserController@user',
+    ]);
+});
+
 //Route::get('/admin','adminController@showadminPage');
 
 Route::get('/about','aboutController@showAboutPage');
@@ -33,22 +40,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');

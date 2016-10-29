@@ -145,9 +145,6 @@ left:200px;
 		</div>
 	</div>
 	<!--header-->
-	
-@include('login')
-@include('register')
 
 	<!--footer-->
 					<div class="footer-section">

@@ -1,33 +1,32 @@
-
-<!--A Design by W3layouts 
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sakani\About</title> <!--css-->
+<title>Sakani\About Us</title>
+<!--css-->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--css-->
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Home Plat Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--js-->
+ <!-- CSRF Token -->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+      <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+<!-- Scripts -->
 <script src="{{URL::asset('js/jquery.min.js')}}"></script>
 <script src="{{URL::asset('js/bootstrap.min.js')}}"></script>
-<script type="text/javascript" src="{{URL::asset('js/numscroller-1.0.js')}}"></script>
-<!--js-->
+
 <!--webfonts-->
 <link href="{{URL::asset('//fonts.googleapis.com/css?family=Josefin+Sans:400,700italic,700,600italic,600,400italic,300italic,300,100italic,100' )}}"rel='stylesheet' type='text/css'>
-<link href="{{URL::asset('//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic') }}"rel='stylesheet' type='text/css'>
+<link href="{{URL::asset('//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' )}}"rel='stylesheet' type='text/css'>
 <!--webfonts-->
-</head>
-<style type="text/css">
+    <style type="text/css">
 	div.pos{
 			
 	
@@ -41,43 +40,60 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	ul.nav{
 position: relative;
 	top:0;
-left:200px;
+left: 10px;
+
  float: center; 
 }
 	ul aa{
  	float: right;
  }
+div.any{
 
+	left:1500px;
+float: center;
+  padding-left:30px;
+  padding-right:30px;
+
+}
+h1 {
+    color:white;
+
+}
+div .bg{
+	background-color: white;
+}
+div .a{
+	left:0px;
+	height: 100px;
+	width: 600px;
+}
+ #something {
+    position:absolute;
+    height: 400px;
+    width: 1100px;
+    margin: -100px 0 0 -200px;
+    top: 65%;
+    left: 30%;
+}
 </style>
-
-
 <body>
-	<!--header-->
-	<div class="header" id="home">
+<!---header-->
+<div class="header" id="home">
 			<div class="header-top">
 				<div class="container">
 					<div class="head-top">
-					<div class="social-icons" class id="icons">
+					<div class="indicate">
+					 <div class="social-icons" class id="icons">
 									<a href="#"><i class="icon"></i></a>
 									<a href="#"><i class="icon1"></i></a>
 									<a href="#"><i class="icon2"></i></a>
 									<a href="#"><i class="icon3"></i></a>
-
-								</div>
-								
-								<div class="deatils">
-							<ul>
-								<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="#" data-toggle="modal" data-target="#myModal">Sign In</a></li>
-								<li><i class="glyphicon glyphicon-lock" aria-hidden="true"></i><a href="#" data-toggle="modal" data-target="#myModal1">Register</a></li>
-							</ul>
-					
-					
-						<div class="clearfix"></div>
-					</div>
-				
-				</div>
-			</div>
-		<div class="container">
+						</div>			
+						</div>
+						</div>
+                    	</div>
+			            </div>
+	<div class="container">
 			<div class="header-bottom">
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
@@ -90,56 +106,58 @@ left:200px;
 								<span class="icon-bar"></span>
 							</button>
 						</div>
-<!-- Collect the nav links, forms, and other content for toggling -->
-
-							<nav class="menu menu--francisco">
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
-								<ul class="nav navbar-nav menu__list" class id="aa">
-								 <a href="index.php"> <img  src="images/logo.PNG" alt=""  style="width:250px;height:100px;right:0;"></a>
-                                      <li class="menu__item"><a href="/contact" class="menu__link"><span class="menu__helper">للتواصل معنا</span></a>
-									</li>
-									<li class="menu__item"><a href="/codes" class="menu__link"><span class="menu__helper">Codes</span></a></li>
-									<li class="menu__item"><a href="/projects" class="menu__link"><span class="menu__helper">Projects</span></a></li>
-									
-									<li class="menu__item menu__item--current"><a href="/about" class="menu__link"><span class="menu__helper">من نحن</span></a></li>
-									<li class="menu__item"><a href="/services" class="menu__link"><span class="menu__helper">الخدمات</span></a></li>
-									<li class="menu__item"><a href="/home" class="menu__link"><span class="menu__helper">الصفحة الرئيسية</span></a></li>
 
-								</ul>
-							</nav>
-								
+<nav class="menu menu--francisco">
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav menu__list" class id="aa">
+ <li><a href="index.php"> <img  src="images/logo.PNG" alt=""  style="width:250px;height:89px;left :0;"></a></li>
+ <li class="menu__item menu__item--current"><a href="/about" class="menu__link"><span class="menu__helper"><h4>Home</h4></span></a></li>
+
+<li class="menu__item menu__item--current"><a href="/about" class="menu__link"><span class="menu__helper"><h4>about us</h4></span></a></li>
+ <li class="menu__item"><a href="/reporting" class="menu__link"><span class="menu__helper"><h4>Reporting</h4></span></a></li>	
+ <li class="menu__item"><a href="/search" class="menu__link"><span class="menu__helper"><h4>Search</h4></span></a></li>						
+<li class="menu__item"><a href="/services" class="menu__link"><span class="menu__helper"><h4>Services</h4></span></a></li>
+<li class="menu__item"><a href="/logout" class="menu__link"><span class="menu__helper"><h4>Log Out</h4></span></a></li>
+</ul>
+</nav>
+
 							<div class="clearfix"></div>
 						</div><!-- /.navbar-collapse -->
-							<!-- /.container-fluid -->
+						<!-- /.container-fluid -->
 					</div>
 				</nav>
-
 			</div>	
 		</div>
-	</div>
+		</nav></div></div></div>
+		<!--header-->
+								
+							
 	<!--header-->
 	<!--banner-->
-	<div class="banner1">
+		<div class="banner1">
 		<div class="container">
-			<h3 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="/home">الصفحة الرئيسية</a> / <span>من نحن</span></h3>
+			<h3 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="/home"><h1 id="h1-bootstrap-heading" >Home</a> <a class="anchorjs-link" href="#h1.-bootstrap-heading"></a><span class="anchorjs-icon"> / <span>about us</span></h3>
 		</div>
 	</div>
+	
 	<!--banner-->
 			<!--about-->
 			<div class="content">
 				<div class="about-w3ls">
 					<div class="container">
-						<h2 class="tittle">من نحن</h2>
+						<h2 class="tittle">about us</h2>
 						<div class="about-grids">
 							<div class="col-md-6 about-grid1">
-								<img src="images/a.png" class="img-responsive" alt=""/>
+								<img src="images/ab2.jpg" class="img-responsive" alt=""/>
 							</div>
 							<div class="col-md-6 about-grid">
-								<h4>Voluptatibus maiores alias consequatur </h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod sollicitudin nunc, eget pretium massa. Ut sed adipiscing enim, pellentesque ultrices erat. Integer placerat felis neque, et semper augue ullamcorper in. Pellentesque iaculis leo iaculis aliquet ultrices. Suspendisse potenti. Aenean ac magna faucibus, consectetur ligula vel, feugiat est. Nullam imperdiet semper neque eget euismod. Nunc commodo volutpat semper.</p>
-								<p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+								<h3>Sakani Web Site </h3>
+<p>It’s important that you find the right accommodation to best suit
+your needs, budget and lifestyle.</p>
+								<p>       Each year at least third of universities students experience housing and residential life .This year, 53450 students had graduated from high school which at least quarter of them will tend to study in a university far away from their hometowns, live away from their families in another city and that’s a big concern in students’ study life. As a students had experienced residential life, we faced many problems start from getting housing ads to booking, maintenance, and satisfaction issues. So Sakni Website is to build  to facilitate rental apartments for students.   </p>
+								<p>  Sakani website  help students to book accommodation which suits their request easily, manage the whole process in one place and keep them in touch with available accommodations all the time with no regard to place or time  .Moreover, it a fast  and easy way to have a clear and good picture about the available ones.</p>
 							</div>
 							<div class="clearfix"></div>
 						</div>
@@ -147,167 +165,54 @@ left:200px;
 				</div>
 				<div class="company-w3">
 					<div class="container">
-						<h3 class="tittle1">Real Estates</h3>
+						<h3 class="tittle1"></h3>
 						<div class="company-grids">
 							<div class="col-md-4 company-grid multi-gd-text">
-								<a href="#"><img src="images/c1.jpg" class="img-responsive" alt="/"></a>
-								<h4>Donec in velit</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod sollicitudin nunc, eget pretium massa.</p>
+								<a href="#"><img src="images/v1.jpg" class="img-responsive" alt="/" style="width:300px;height:270px;"></a>
+								
 							</div>
 							<div class="col-md-4 company-grid multi-gd-text">
-								<a href="#"><img src="images/c2.jpg" class="img-responsive" alt="/"></a>
-								<h4>Praesent justo </h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod sollicitudin nunc, eget pretium massa.</p>
+								<a href="#"><img src="images/v2.jpg" class="img-responsive" alt="/" style="width:300px;height:270px;"></a>
+								
 							</div>
 							<div class="col-md-4 company-grid multi-gd-text">
-								<a href="#"><img src="images/c3.jpg" class="img-responsive" alt="/"></a>
-								<h4>Convallis Accumsan </h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod sollicitudin nunc, eget pretium massa.</p>
+								<a href="#"><img src="images/v4.jpg" class="img-responsive" alt="/" style="width:300px;height:270px;"></a>
+								
 							</div>
 							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
 				<!--count-->
-			<div class="count-agileits">
-				<div class="container">
-					<h3 class="tittle">Fun Facts </h3>
-					<div class="count-grids">
-						<div class="col-md-3 count-grid">
-						<i class="glyphicon glyphicon-yen" aria-hidden="true"></i>
-							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='105206' data-delay='.5' data-increment="100">105206</div>
-									<span></span>
-									<h5>Profit</h5>
-							</div>
-						</div>
-						<div class="col-md-3 count-grid">
-						<i class="glyphicon glyphicon-hand-left" aria-hidden="true"></i>
-							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='372' data-delay='.5' data-increment="100">372</div>
-									<span></span>
-									<h5>Finished Projects</h5>
-							</div>
-						</div>
-						<div class="col-md-3 count-grid">
-						<i class="glyphicon glyphicon-time" aria-hidden="true"></i>
-							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='10520' data-delay='.5' data-increment="100">10520</div>
-									<span></span>
-									<h5>Working Hours</h5>
-								</div>
-						</div>
-						<div class="col-md-3 count-grid">
-						<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='256' data-delay='.5' data-increment="100">256</div>
-									<span></span>
-									<h5>Happy Clients</h5>
-							</div>
-						</div>
+				
+					
+						
+						
 						<div class="clearfix"></div>
 					</div>
 				</div>
 			</div>
 				<!--count-->
-				<div class="agent-w3l">
-					<div class="container">
-						<h3 class="tittle1">Our Agents</h3>
-						<div class="agent-grids">
-							<div class="col-md-6 agent-grid">
-								<div class="agent-left">
-									<img src="images/a3.jpg" class="img-responsive" alt="/">
-								</div>
-								<div class="agent-right">
-									<h4>John Nguyen</h4>
-									<ul>
-										<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
-										<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
-										<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
-									</ul>
-									<div class="social-icon">
-										<a href="#"><i class="icon"></i></a>
-										<a href="#"><i class="icon1"></i></a>
-										<a href="#"><i class="icon2"></i></a>
-										<a href="#"><i class="icon3"></i></a>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="col-md-6 agent-grid">
-								<div class="agent-left">
-									<img src="images/a4.jpg" class="img-responsive" alt="/">
-								</div>
-								<div class="agent-right">
-									<h4>Sydney Taft</h4>
-									<ul>
-										<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
-										<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
-										<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
-									</ul>
-									<div class="social-icon">
-										<a href="#"><i class="icon"></i></a>
-										<a href="#"><i class="icon1"></i></a>
-										<a href="#"><i class="icon2"></i></a>
-										<a href="#"><i class="icon3"></i></a>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="agent-grids">
-							<div class="col-md-6 agent-grid">
-								<div class="agent-left">
-									<img src="images/a5.jpg" class="img-responsive" alt="/">
-								</div>
-								<div class="agent-right">
-									<h4>Michael Feng</h4>
-									<ul>
-										<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
-										<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
-										<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
-									</ul>
-									<div class="social-icon">
-										<a href="#"><i class="icon"></i></a>
-										<a href="#"><i class="icon1"></i></a>
-										<a href="#"><i class="icon2"></i></a>
-										<a href="#"><i class="icon3"></i></a>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="col-md-6 agent-grid">
-								<div class="agent-left">
-									<img src="images/a6.jpg" class="img-responsive" alt="/">
-								</div>
-								<div class="agent-right">
-									<h4>Stacy Barron</h4>
-									<ul>
-										<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
-										<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
-										<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
-									</ul>
-									<div class="social-icon">
-										<a href="#"><i class="icon"></i></a>
-										<a href="#"><i class="icon1"></i></a>
-										<a href="#"><i class="icon2"></i></a>
-										<a href="#"><i class="icon3"></i></a>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-			</div>
+				
+							
+							
+						
 			<!--about-->
 		<!--footer-->
 						
 										<div class="copy-section">
 						<div class="container">
 							<p>&copy; 2016 Sakani All rights reserved | Design by  <a href="http://w3layouts.com">Al Najah University students</a></p>
+							<div class="social-icon">
+										<a href="#"><i class="icon"></i></a>
+										<a href="#"><i class="icon1"></i></a>
+										<a href="#"><i class="icon2"></i></a>
+										<a href="#"><i class="icon3"></i></a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							
 						</div>
 					</div>
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog">

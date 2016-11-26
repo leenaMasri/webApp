@@ -16,8 +16,12 @@ class CreateOwnerTable extends Migration
         Schema::create('owner', function (Blueprint $table) {
             //
             $table->increments('owner_id');
-            $table->string('apartment');
-          
+            $table->string('owner_name');
+            $table->string('owner_email');
+            $table->integer('owner_phone');
+            $table->integer('bank_account');
+            $table->string('bank_name');
+
             $table->timestamps();
 
           

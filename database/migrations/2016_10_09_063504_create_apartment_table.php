@@ -16,10 +16,13 @@ class CreateApartmentTable extends Migration
         Schema::create('apartment', function (Blueprint $table) {
             //
             $table->increments('apartment_id');
-           $table->text('address');
-            $table->string('owner_name');
-           
+           $table->string('gender');
+            $table->integer('floor');
+
+              $table->string('location');
+            $table->integer('num_of_room');
             $table->integer('owner_id');
+            $table->integer('des_id');
             $table->timestamps();
 
           

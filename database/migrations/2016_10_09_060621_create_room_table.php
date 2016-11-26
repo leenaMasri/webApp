@@ -16,8 +16,13 @@ class CreateRoomTable extends Migration
         Schema::create('room', function (Blueprint $table) {
             //
             $table->increments('room_id');
-            $table->integer('room_type_id');
-            $table->boolean('is_reserved');
+             $table->integer('apartment_id');
+            $table->integer('beds_num');
+            $table->string('room_type');
+
+              $table->double('price');
+            $table->string('bathroom_type');
+            $table->integer('availability');
             $table->timestamps();
 
           

@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>الخدمات</title>
+<title>Sakani\services</title>
 <!--css-->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -42,11 +42,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	ul.nav{
 position: relative;
 	top:0;
-left:200px;
+left:10px;
  float: center; 
 }
 	ul aa{
- 	float: right;
+ 	float: left;
  }
 
 </style>
@@ -63,8 +63,8 @@ left:200px;
 									<a href="#"><i class="icon3"></i></a>
 
 								</div>
-								<a href="#" data-toggle="modal" data-target="#myModal1">التسجيل</a><br/>
-								<a href="#" data-toggle="modal" data-target="#myModal">تسجيل الدخول</a>
+								<a href="#" data-toggle="modal" data-target="#myModal1">Sing Up</a><br/>
+								<a href="#" data-toggle="modal" data-target="#myModal">Sing In</a>
 									
 					
 						<div class="clearfix"></div>
@@ -88,18 +88,16 @@ left:200px;
 						<nav class="menu menu--francisco">
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-								<ul class="nav navbar-nav menu__list" class id="aa">
-								 <a href="index.php"> <img  src="images/logo.PNG" alt=""  style="width:250px;height:100px;right:0;"></a>
-                                     <li class="menu__item"><a href="/contact" class="menu__link"><span class="menu__helper">للتواصل معنا</span></a>
-									</li>
-									<li class="menu__item"><a href="/codes" class="menu__link"><span class="menu__helper">Codes</span></a></li>
-									<li class="menu__item"><a href="/projects" class="menu__link"><span class="menu__helper">Projects</span></a></li>
-									
-									<li class="menu__item menu__item--current"><a href="/about" class="menu__link"><span class="menu__helper">من نحن</span></a></li>
-									<li class="menu__item"><a href="/services" class="menu__link"><span class="menu__helper">الخدمات</span></a></li>
-									<li class="menu__item"><a href="/home" class="menu__link"><span class="menu__helper">الصفحة الرئيسية</span></a></li>
+							
+<ul class="nav navbar-nav menu__list" class id="aa">
+ <li><a href="index.php"> <img  src="images/logo.PNG" alt=""  style="width:250px;height:89px;left :0;"></a></li>
+ <li class="menu__item menu__item--current"><a href="/about" class="menu__link"><span class="menu__helper"><h4>Home</h4></span></a></li>
 
-								</ul>
+<li class="menu__item menu__item--current"><a href="/about" class="menu__link"><span class="menu__helper"><h4>about us</h4></span></a></li>
+ <li class="menu__item"><a href="/reporting" class="menu__link"><span class="menu__helper"><h4>Reporting</h4></span></a></li>	
+ <li class="menu__item"><a href="/search" class="menu__link"><span class="menu__helper"><h4>Search</h4></span></a></li>						
+<li class="menu__item"><a href="/services" class="menu__link"><span class="menu__helper"><h4>Services</h4></span></a></li>
+<li class="menu__item"><a href="/logout" class="menu__link"><span class="menu__helper"><h4>Log Out</h4></span></a></li>
 							</nav>
 <!-- Collect the nav links, forms, and other content for toggling -->
 						
@@ -116,7 +114,7 @@ left:200px;
 	<!--banner-->
 	<div class="banner1">
 		<div class="container">
-			<h3 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="/home">الصفحة الرئيسية</a> / <span>الخدمات</span></h3>
+			<h3 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="/home"><h1 id="h1-bootstrap-heading" >Home</a> <a class="anchorjs-link" href="#h1.-bootstrap-heading"></a><span class="anchorjs-icon"> / <span>Services</span></h3>
 		</div>
 	</div>
 	<!--banner-->
@@ -124,13 +122,13 @@ left:200px;
 		<div class="content">
 			<div class="services-w3l">
 				<div class="container">
-					<h2 class="tittle">خدماتنا</h2>
+					<h2 class="tittle">Our Services</h2>
 					<div class="service-grids">
 						<div class="col-md-6 serce-grid multi-gd-text">
 							<div class="service-top">
 								<div class="col-md-6 service-left">
 									<div class="service-img">
-										<a href="projects.html"><img src="images/s2.jpg" class="img-responsive wid" alt=""/></a>
+										<a href="projects.html"><img src="images/ph2.jpg" class="img-responsive wid" alt=""/></a>
 									</div>
 									<h4>adipiscing elit</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare odio et massa dignissim, at accumsan metus viverra.</p>
@@ -164,7 +162,7 @@ left:200px;
 						</div>
 						<div class="col-md-6 serce-grid multi-gd-text">
 							<div class="service-img">
-								<a href="projects.html"><img src="images/s1.jpg" class="img-responsive wid" alt=""/></a>
+								<a href="projects.html"><img src="images/ses.jpg" class="img-responsive wid" alt="" style="height: 700px;" /></a>
 							</div>
 						</div>
 						<div class="clearfix"></div>
